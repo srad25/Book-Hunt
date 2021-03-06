@@ -25,9 +25,9 @@
 
           <div class="top-bar-right">
             <ul class="menu">
-              <li class="listMenu"><input class="rounded bordered" type="search" placeholder="Author"></li>
-              <li class="listMenu"><input class="rounded bordered" type="search" placeholder="Title"></li>
-              <li class="listMenu"><button type="button" class="button">Search</button></li>
+              <li class="listMenu"><input class="rounded bordered" id="searchInputAuthor" type="search" placeholder="Author"></li>
+              <li class="listMenu"><input class="rounded bordered" id="searchInputTitle" type="search" placeholder="Title"></li>
+              <li class="listMenu" id="searcBtn"><button type="button" class="button">Search</button></li>
             </ul>
           </div>
 
@@ -36,20 +36,22 @@
 
     <main>
       <div class="callout">
-        <h1>Book Hunt</h1>
-        <p>is simply dummy text of the printing and typesetting industry.</p>
+        <div class="textBackground">
+          <h1>Book Hunt</h1>
+          <p>is simply dummy text of the printing and typesetting industry.</p>
+        </div>
       </div>
 
       <div class="grid-container">
         <h5> New York Times Best Sellers!</h5>
-        <div class="grid-x grid-margin-x small-up-2 medium-up-5 padding-horizontal-3">
+        <div class="grid-x grid-margin-x small-up-2 medium-up-5 padding-horizontal-3" style="align-items:stretch">
           <div class="cell">
             <div class="card" id="bestSeller0">
               <img src="./assets/images/pexels-suzy-hazelwood-1887609.jpg" class="bestSellerImg" id="bestSellerImg0">
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle0">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis0">book synopsis</p>
-                <button type="button" class="button primary submit small">More Info</button>
+                <a id="moreInfo0"><button type="button" class="button primary submit small btnMoreInfo">More Info</button></a>
 
               </div>
             </div>
@@ -60,7 +62,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle1">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis1">book synopsis</p>
-                <button type="button" class="button primary submit small">More Info</button>
+                <a id="moreInfo1"><button type="button" class="button primary submit small">More Info</button></a>
               </div>
             </div>
           </div>
@@ -70,7 +72,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle2">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis2">book synopsis</p>
-                <button type="button" class="button primary submit small">More Info</button>
+                <a id="moreInfo2"><button type="button" class="button primary submit small">More Info</button></a>
               </div>
             </div>
           </div>
@@ -80,7 +82,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle3">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis3">book synopsis</p>
-                <button type="button" class="button primary submit small">More Info</button>
+                <a id="moreInfo3"><button type="button" class="button primary submit small">More Info</button></a>
               </div>
             </div>
           </div>
@@ -90,12 +92,13 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle4">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis4">book synopsis</p>
-                <button type="button" class="button primary submit small">More Info</button>
+                <a id="moreInfo4"><button type="button" class="button primary submit small">More Info</button></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
       <div class="cell">
         <div class="card" id="resultsContainer">
@@ -103,6 +106,45 @@
             <h5>Your Results</h5>
             
           </div>
+
+      <!-- Search Results Section -->
+      <div class="grid-container">
+      <div class="row">
+        <div class="column medium-12">
+          <h5>Search Results</h5>
+          <table class="hover">
+            <thead>
+              <tr>
+                <th width="200">Cover</th>
+                <th width="150">Title</th>
+                <th width="150">Author</th>
+                <th width="150">Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+        </main>
         </div>
       </div>
 

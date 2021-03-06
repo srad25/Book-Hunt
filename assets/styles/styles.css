@@ -1,5 +1,5 @@
 
-/* .menu{
+.menu{
     background: rgb(41, 40, 40);
 }
 
@@ -9,14 +9,29 @@
 
 .listMenu{
     background-color: rgb(41, 40, 40);
-} */
+}
+
+ul{
+    background-color: rgb(41, 40, 40); 
+}
+
+a{
+    color: white;
+}
+
+.textBackground{
+    background: rgba(0, 0, 0, 0.418);
+    border-radius: 6px;
+    padding: 20px;
+}
 
 .card{
     width: 200px;
 }
 
 .callout{
-background: linear-gradient(to top right, #bdc3c7 0%, #2c3e50 100%);;
+    background-image: url("../images/pexels-tamas-maszaros-12064.jpg");
+/* background: linear-gradient(to top right, #bdc3c7 0%, #2c3e50 100%); */
 padding: 70px;
 color: white;
 }
