@@ -3,7 +3,7 @@
     background: rgb(41, 40, 40);
 }
 
-.top-bar{
+.top-bar, .top-bar ul{
     background-color: rgb(41, 40, 40);
 }
 
@@ -44,6 +44,11 @@ color: white;
 .bestSellerBookTitle{
     font-weight: bold;
 }
+
+.btnMoreInfo{
+    margin-top: auto;
+}
+
 
 
 
