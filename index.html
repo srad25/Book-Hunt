@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Hunter</title>
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css"> <!-- Compressed JavaScript -->
+    <!-- link to the styles.css file -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <header>
+      <div class="top-bar">
+          <div class="top-bar-left">
+            <ul class="menu">
+              <li class="listMenu"><a href="#">Book Hunt</a></li>
+              <li class="listMenu"><a href="#">Home</a></li>
+              <li class="listMenu"><a href="#">Wishlist</a></li>
+            </ul>
+          </div>
+
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li class="listMenu"><input class="rounded bordered" id="searchInputAuthor" type="search" placeholder="Author"></li>
+              <li class="listMenu"><input class="rounded bordered" id="searchInputTitle" type="search" placeholder="Title"></li>
+              <li class="listMenu" id="searcBtn"><button type="button" class="button">Search</button></li>
+            </ul>
+          </div>
+
+      </div>     
+    </header>
+
+    <main>
+      <div class="callout">
+        <div class="textBackground">
+          <h1>Book Hunt</h1>
+          <p>is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <h5> New York Times Best Sellers!</h5>
+        <div class="grid-x grid-margin-x small-up-2 medium-up-5 padding-horizontal-3" style="align-items:stretch">
+          <div class="cell">
+            <div class="card" id="bestSeller0">
+              <img src="./assets/images/pexels-suzy-hazelwood-1887609.jpg" class="bestSellerImg" id="bestSellerImg0">
+              <div class="card-section">
+                <p class="bestSellerBookTitle" id="bestSellerTitle0">Book Title</p>
+                <p class="bestSellerSynopsis" id="bestSellerSynopsis0">book synopsis</p>
+                <a id="moreInfo0"><button type="button" class="button primary submit small btnMoreInfo">More Info</button></a>
+
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="card" id="bestSeller1">
+              <img src="./assets/images/pexels-suzy-hazelwood-1887609.jpg" class="bestSellerImg" id="bestSellerImg1">
+              <div class="card-section">
+                <p class="bestSellerBookTitle" id="bestSellerTitle1">Book Title</p>
+                <p class="bestSellerSynopsis" id="bestSellerSynopsis1">book synopsis</p>
+                <a id="moreInfo1"><button type="button" class="button primary submit small">More Info</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="card" id="bestSeller2">
+              <img src="./assets/images/pexels-suzy-hazelwood-1887609.jpg" class="bestSellerImg" id="bestSellerImg2">
+              <div class="card-section">
+                <p class="bestSellerBookTitle" id="bestSellerTitle2">Book Title</p>
+                <p class="bestSellerSynopsis" id="bestSellerSynopsis2">book synopsis</p>
+                <a id="moreInfo2"><button type="button" class="button primary submit small">More Info</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="card" id="bestSeller3">
+              <img src="./assets/images/pexels-suzy-hazelwood-1887609.jpg" class="bestSellerImg" id="bestSellerImg3">
+              <div class="card-section">
+                <p class="bestSellerBookTitle" id="bestSellerTitle3">Book Title</p>
+                <p class="bestSellerSynopsis" id="bestSellerSynopsis3">book synopsis</p>
+                <a id="moreInfo3"><button type="button" class="button primary submit small">More Info</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="card" id="bestSeller4">
+              <img src="./assets/images/pexels-suzy-hazelwood-1887609.jpg" class="bestSellerImg" id="bestSellerImg4">
+              <div class="card-section">
+                <p class="bestSellerBookTitle" id="bestSellerTitle4">Book Title</p>
+                <p class="bestSellerSynopsis" id="bestSellerSynopsis4">book synopsis</p>
+                <a id="moreInfo4"><button type="button" class="button primary submit small">More Info</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Results Section -->
+      <div class="grid-container">
+      <div class="row">
+        <div class="column medium-12">
+          <h5>Search Results</h5>
+          <table class="hover">
+            <thead>
+              <tr>
+                <th width="200">Cover</th>
+                <th width="150">Title</th>
+                <th width="150">Author</th>
+                <th width="150">Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+        </div>
+
+    </main>
+
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- scripts from Foundation -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+    <script>
+        $(document).foundation();
+      </script>
+      <!-- linking the scripts.js file -->
+      <script src="./assets/scripts/scripts.js"></script>
+      
+
+
+
+
+
+
+
+      
+
+</body>
+</html>
+              
+  
+  
+
+  
+ 
