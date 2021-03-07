@@ -18,8 +18,8 @@
           <div class="top-bar-left">
             <ul class="menu">
               <li class="listMenu"><a href="#">Book Hunt</a></li>
-              <li class="listMenu"><a href="#">Home</a></li>
-              <li class="listMenu"><a href="#">Wishlist</a></li>
+              <li class="listMenu"><a id="home" data-attribute="mainSection" href="#">Home</a></li>
+              <li class="listMenu"><a id="wishlistlink" data-attribute="wishlist" href="#">Wishlist</a></li>
             </ul>
           </div>
 
@@ -35,6 +35,7 @@
     </header>
 
     <main>
+      <div id="mainSection">
       <div class="callout">
         <div class="textBackground">
           <h1>Book Hunt</h1>
@@ -44,14 +45,14 @@
 
       <div class="grid-container">
         <h5> New York Times Best Sellers!</h5>
-        <div class="grid-x grid-margin-x small-up-2 medium-up-5 padding-horizontal-3" style="align-items:stretch">
+        <div class="grid-x grid-margin-x small-up-2 medium-up-5 padding-horizontal-3 padding-bottom-3" style="align-items:stretch">
           <div class="cell">
             <div class="card" id="bestSeller0">
               <img src="./assets/images/pexels-suzy-hazelwood-1887609.jpg" class="bestSellerImg" id="bestSellerImg0">
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle0">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis0">book synopsis</p>
-                <a id="moreInfo0"><button type="button" class="button primary submit small btnMoreInfo">More Info</button></a>
+                <a id="moreInfo0"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
 
               </div>
             </div>
@@ -62,7 +63,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle1">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis1">book synopsis</p>
-                <a id="moreInfo1"><button type="button" class="button primary submit small">More Info</button></a>
+                <a id="moreInfo1"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
               </div>
             </div>
           </div>
@@ -72,7 +73,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle2">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis2">book synopsis</p>
-                <a id="moreInfo2"><button type="button" class="button primary submit small">More Info</button></a>
+                <a id="moreInfo2"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
               </div>
             </div>
           </div>
@@ -82,7 +83,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle3">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis3">book synopsis</p>
-                <a id="moreInfo3"><button type="button" class="button primary submit small">More Info</button></a>
+                <a id="moreInfo3"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
               </div>
             </div>
           </div>
@@ -92,15 +93,15 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle4">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis4">book synopsis</p>
-                <a id="moreInfo4"><button type="button" class="button primary submit small">More Info</button></a>
+                <a id="moreInfo4"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
       <!-- Search Results Section -->
-      <div class="grid-container">
+      <div id="searchresults" class="grid-container">
       <div class="row">
         <div class="column medium-12">
           <h5>Search Results</h5>
@@ -113,30 +114,66 @@
                 <th width="150">Rating</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Content Goes Here</td>
-                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-                <td>Content Goes Here</td>
-                <td>Content Goes Here</td>
-              </tr>
-              <tr>
-                <td>Content Goes Here</td>
-                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                <td>Content Goes Here</td>
-                <td>Content Goes Here</td>
-              </tr>
-              <tr>
-                <td>Content Goes Here</td>
-                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                <td>Content Goes Here</td>
-                <td>Content Goes Here</td>
+            <tbody id="displayResults">
+              <tr >
+                <td><img id="googleBooksCover"> </img> </td>
+                <td id="googleBooksTitle"> </td>
+                <td id="googleBooksAuthor"> </td>
+                <td id="googleBooksRating"></td>
               </tr>
             </tbody>
           </table>
         </div>
         </div>
         </div>
+
+        <!-- Wishlist -->
+        <div id="wishlist" class="grid-container">
+          <div class="row">
+            <div class="column medium-12">
+              <h5>Wishlist</h5>
+              <table class="hover">
+                <thead>
+                  <tr>
+                    <th width="200">Cover</th>
+                    <th width="150">Title</th>
+                    <th width="150">Author</th>
+                    <th width="150">Rating</th>
+                  </tr>
+                </thead>
+                <tbody id="displayResults">
+                  <tr >
+                    <td><img id="googleBooksCover"> </img> </td>
+                    <td id="googleBooksTitle"> </td>
+                    <td id="googleBooksAuthor"> </td>
+                    <td id="googleBooksRating"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+            </div>
+
+            <!-- Details Page -->
+            <div id="detailspage" class="grid-container">
+              <h5> Details Page</h5>
+              <div class="grid-x grid-margin-x small-up-2 medium-up-5 padding-horizontal-3 padding-bottom-3" style="align-items:stretch">
+                <div class="cell">
+                  <div class="card" id="bestSeller0">
+                    <img src="./assets/images/pexels-suzy-hazelwood-1887609.jpg" class="bestSellerImg" id="bestSellerImg0">
+                    <div class="card-section">
+                      <p class="bestSellerBookTitle" id="bestSellerTitle0">Book Title</p>
+                      <p class="bestSellerSynopsis" id="bestSellerSynopsis0">book synopsis</p>
+                      <a id="moreInfo0"><button type="button" value="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
+      
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+           
 
     </main>
 
@@ -153,15 +190,6 @@
       <!-- linking the scripts.js file -->
       <script src="./assets/scripts/scripts.js"></script>
       
-
-
-
-
-
-
-
-      
-
 </body>
 </html>
               
