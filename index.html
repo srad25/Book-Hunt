@@ -11,8 +11,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css"> <!-- Compressed JavaScript -->
     <!-- link to the styles.css file -->
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Header including the navigation menu and the search inputs -->
     <header>
       <div class="top-bar">
           <div class="top-bar-left">
@@ -39,7 +41,7 @@
       <div class="callout">
         <div class="textBackground">
           <h1>Book Hunt</h1>
-          <p>is simply dummy text of the printing and typesetting industry.</p>
+          <h3>Meet your next read!</h3>
         </div>
       </div>
 
@@ -105,24 +107,12 @@
       <div class="row">
         <div class="column medium-12">
           <h5>Search Results</h5>
-          <table class="hover">
-            <thead>
-              <tr>
-                <th width="200">Cover</th>
-                <th width="150">Title</th>
-                <th width="150">Author</th>
-                <th width="150">Rating</th>
-              </tr>
-            </thead>
-            <tbody id="displayResults">
-              <tr >
-                <td><img id="googleBooksCover"> </img> </td>
-                <td id="googleBooksTitle"> </td>
-                <td id="googleBooksAuthor"> </td>
-                <td id="googleBooksRating"></td>
-              </tr>
-            </tbody>
-          </table>
+           <div id="displayResults">
+
+           </div>
+
+
+  
         </div>
         </div>
         </div>
@@ -132,29 +122,18 @@
           <div class="row">
             <div class="column medium-12">
               <h5>Wishlist</h5>
-              <table class="hover">
-                <thead>
-                  <tr>
-                    <th width="200">Cover</th>
-                    <th width="150">Title</th>
-                    <th width="150">Author</th>
-                    <th width="150">Rating</th>
-                  </tr>
-                </thead>
-                <tbody id="displayResults">
-                  <tr >
-                    <td><img id="googleBooksCover"> </img> </td>
-                    <td id="googleBooksTitle"> </td>
-                    <td id="googleBooksAuthor"> </td>
-                    <td id="googleBooksRating"></td>
-                  </tr>
-                </tbody>
-              </table>
+               <div id="displayWishlist">
+    
+               </div>
+    
+    
+      
             </div>
             </div>
+          
             </div>
 
-            <!-- Details Page -->
+            <!-- Details Page
             <div id="detailspage" class="grid-container">
               <h5> Details Page</h5>
               <div class="grid-x grid-margin-x small-up-2 medium-up-5 padding-horizontal-3 padding-bottom-3" style="align-items:stretch">
@@ -172,7 +151,7 @@
                 
                 
               </div>
-            </div>
+            </div> -->
            
 
     </main>
