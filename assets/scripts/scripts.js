@@ -1,3 +1,7 @@
+// Declared Variables
+var wishListArray = [];
+var searchResultsArray = [];
+
 function getApi(){
     var requestUrlHardcoverNonFiction="https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=GXs6gx2gnZLiyA8GGEdALLBnQEC8Ak1w";
     
@@ -79,3 +83,5 @@ $("#searcBtn").on("click",googleBooksApi);
 $("#home").on("click",displayURL);
 $("#wishlistlink").on("click",displayURL);
 //$(".btnMoreInfo").on("click",displayURL);
+
+
