@@ -28,6 +28,6 @@ Book Hunt is an application designed with avid readers in mind, it provides the 
 
 ![alt text](./assets/images/book-hunt.png "pic of Book Hunt Page")
 
-
-* https://github.com/srad25/Group-Project
-* https://srad25.github.io/Group-Project
+## View deployed application
+* https://srad25.github.io/Book-Hunt
+* https://github.com/srad25/Book-Hunt
