@@ -17,17 +17,17 @@ Book Hunt is an application designed with avid readers in mind, it provides the 
 * The search bar will clear once you have submitted the search.
 
 ## Contributors
-[NohaAshraf85](https://www.github.com/NohaAshraf85)
-[srad25](https://www.github.com/srad25)
-[Neel109](https://www.github.com/Neel109)
-[aseppala98](https://www.github.com/aseppala98)
+* [NohaAshraf85](https://www.github.com/NohaAshraf85)
+* [srad25](https://www.github.com/srad25)
+* [Neel109](https://www.github.com/Neel109)
+* [aseppala98](https://www.github.com/aseppala98)
 
 ## Resources
-Google Books API and New York Times API for information on books.
-Foundation 6 CSS was used in the development of this application
+* Google Books API and New York Times API for information on books.
+* Foundation 6 CSS was used in the development of this application
 
 ![alt text](./assets/images/book-hunt.png "pic of Book Hunt Page")
 
 
-https://github.com/srad25/Group-Project
-https://srad25.github.io/Group-Project
+* https://github.com/srad25/Group-Project
+* https://srad25.github.io/Group-Project
