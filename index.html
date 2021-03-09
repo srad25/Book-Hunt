@@ -27,8 +27,8 @@
 
           <div class="top-bar-right">
             <ul class="menu">
-              <li class="listMenu"><input class="rounded bordered" id="searchInputAuthor" type="search" onfocus="this.value=''" placeholder="Author"></li>
-              <li class="listMenu"><input class="rounded bordered" id="searchInputTitle" type="search" onfocus="this.value=''" placeholder="Title"></li>
+              <li class="listMenu"><input class="rounded bordered" onkeypress="handle(event)" id="searchInputAuthor" type="search" onfocus="this.value=''" placeholder="Author"></li>
+              <li class="listMenu"><input class="rounded bordered" onkeypress="handle(event)" id="searchInputTitle" type="search" onfocus="this.value=''" placeholder="Title"></li>
               <li class="listMenu" id="searcBtn"><button type="button" class="button small rounded bordered">Search</button></li>
             </ul>
           </div>
