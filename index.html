@@ -19,7 +19,7 @@
       <div class="top-bar">
           <div class="top-bar-left">
             <ul class="menu">
-              <li class="listMenu"><a href="#">Book Hunt</a></li>
+              <li class="listMenu logo"><span>Book Hunt</span></li>
               <li class="listMenu"><a id="home" data-attribute="mainSection" href="#">Home</a></li>
               <li class="listMenu"><a id="wishlistlink" data-attribute="wishlist" href="#">Wishlist</a></li>
             </ul>
@@ -29,6 +29,7 @@
             <ul class="menu">
               <li class="listMenu"><input class="rounded bordered" onkeypress="handle(event)" id="searchInputAuthor" type="search" onfocus="this.value=''" placeholder="Author"></li>
               <li class="listMenu"><input class="rounded bordered" onkeypress="handle(event)" id="searchInputTitle" type="search" onfocus="this.value=''" placeholder="Title"></li>
+              <li class="listMenu" id="searchBtn"><button type="button" class="button small rounded bordered">Search</button></li>
               <li class="listMenu" id="searchBtn"><button type="button" class="button">Search</button></li>
             </ul>
           </div>
@@ -46,15 +47,15 @@
       </div>
 
       <div class="grid-container">
-        <h5> New York Times Best Sellers!</h5>
-        <div class="grid-x grid-margin-x small-up-2 medium-up-5 padding-horizontal-3 padding-bottom-3" style="align-items:stretch">
+        <h5 class="nytbestsellerstitle"> New York Times Hardcover Fiction Best Sellers</h5>
+        <div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-3 large-up-5 padding-horizontal-3 padding-bottom-3" style="align-items:stretch">
           <div class="cell">
             <div class="card" id="bestSeller0">
               <img src="./assets/images/pexels-suzy-hazelwood-1887609.jpg" class="bestSellerImg" id="bestSellerImg0">
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle0">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis0">book synopsis</p>
-                <a id="moreInfo0"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
+                <a id="moreInfo0"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">Buy on Amazon</button></a>
 
               </div>
             </div>
@@ -65,7 +66,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle1">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis1">book synopsis</p>
-                <a id="moreInfo1"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
+                <a id="moreInfo1"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">Buy on Amazon</button></a>
               </div>
             </div>
           </div>
@@ -75,7 +76,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle2">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis2">book synopsis</p>
-                <a id="moreInfo2"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
+                <a id="moreInfo2"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">Buy on Amazon</button></a>
               </div>
             </div>
           </div>
@@ -85,7 +86,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle3">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis3">book synopsis</p>
-                <a id="moreInfo3"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
+                <a id="moreInfo3"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">Buy on Amazon</button></a>
               </div>
             </div>
           </div>
@@ -95,7 +96,7 @@
               <div class="card-section">
                 <p class="bestSellerBookTitle" id="bestSellerTitle4">Book Title</p>
                 <p class="bestSellerSynopsis" id="bestSellerSynopsis4">book synopsis</p>
-                <a id="moreInfo4"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">More Info</button></a>
+                <a id="moreInfo4"><button type="button" data-attribute="detailspage" class="button primary submit small btnMoreInfo">Buy on Amazon</button></a>
               </div>
             </div>
           </div>
