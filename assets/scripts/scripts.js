@@ -115,7 +115,16 @@ function googleBooksApi(){
        
        
     };
+// Press Enter in Author/Title search bars to use Search functionality
+function handle(e){
+	document.getElementById("searchInputAuthor").value;
+    if(e.keyCode === 13){
+        googleBooksApi();
+    }
+	return false;
+}
 
+    
     function displayURL()
     {
        var attributevalue = this.getAttribute("data-attribute");
@@ -187,7 +196,7 @@ function googleBooksApi(){
     }
 
 
-$("#searcBtn").on("click",googleBooksApi);
+$("#searchBtn").on("click",googleBooksApi);
 $("#home").on("click",displayURL);
 $("#wishlistlink").on("click",displayURL);
 
