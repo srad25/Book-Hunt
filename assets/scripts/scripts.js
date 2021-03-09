@@ -2,9 +2,11 @@
 var wishListArray = [];
 var searchResultsArray = [];
 
+// Get API function for NYT best sellers
 function getApi(){
     var requestUrlHardcoverNonFiction="https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=GXs6gx2gnZLiyA8GGEdALLBnQEC8Ak1w";
     
+    // Fetch NYT Api
     fetch(requestUrlHardcoverNonFiction)
         .then(function (response) {
             return response.json();
@@ -13,6 +15,7 @@ function getApi(){
         .then (function (data){
             console.log(data);
             for (var i=0; i<5; i++){
+                // Display img, title, synopsis, amazon link
             $("#bestSellerImg"+i).attr("src", data.results.books[i].book_image);
             $("#bestSellerTitle"+i).text(data.results.books[i].title);
             $("#bestSellerSynopsis"+i).text(data.results.books[i].description);
